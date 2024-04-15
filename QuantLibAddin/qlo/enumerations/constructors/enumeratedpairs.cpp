@@ -436,7 +436,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
         return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -460,7 +459,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
         return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -484,7 +482,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
         return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -508,7 +505,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
         return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -532,7 +528,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
         return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -556,7 +551,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
         return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -973,7 +967,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
         return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -997,7 +990,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
     return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -1021,7 +1013,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
     return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -1045,7 +1036,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
     return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -1069,7 +1059,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
     return boost::shared_ptr<QuantLib::YieldTermStructure>(new
@@ -1093,7 +1082,6 @@ namespace QuantLibAddin {
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
             const std::vector<QuantLib::Date>& jumpDates,
-            QuantLib::Real accuracy,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n) {
     return boost::shared_ptr<QuantLib::YieldTermStructure>(new

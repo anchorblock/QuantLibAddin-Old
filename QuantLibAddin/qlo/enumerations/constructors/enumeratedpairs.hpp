@@ -154,7 +154,7 @@ namespace QuantLibAddin {
             const std::vector<boost::shared_ptr<QuantLib::RateHelper> >& rateHelpers,
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
-            const std::vector<QuantLib::Date>& jumpDates,
+            const std::vector<QuantLib::Date>& jumpDates,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n);
     boost::shared_ptr<QuantLib::YieldTermStructure> DISCOUNT_LogMixedLinearCubicNaturalSpline_PiecewiseYieldCurve(
@@ -163,7 +163,7 @@ namespace QuantLibAddin {
             const std::vector<boost::shared_ptr<QuantLib::RateHelper> >& rateHelpers,
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
-            const std::vector<QuantLib::Date>& jumpDates,
+            const std::vector<QuantLib::Date>& jumpDates,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n);
     boost::shared_ptr<QuantLib::YieldTermStructure> DISCOUNT_MixedLinearMonotonicCubicNaturalSpline_PiecewiseYieldCurve(
@@ -190,7 +190,7 @@ namespace QuantLibAddin {
             const std::vector<boost::shared_ptr<QuantLib::RateHelper> >& rateHelpers,
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
-            const std::vector<QuantLib::Date>& jumpDates,
+            const std::vector<QuantLib::Date>& jumpDates,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n);
     boost::shared_ptr<QuantLib::YieldTermStructure> DISCOUNT_LogMixedLinearKrugerCubic_PiecewiseYieldCurve(
@@ -199,7 +199,7 @@ namespace QuantLibAddin {
             const std::vector<boost::shared_ptr<QuantLib::RateHelper> >& rateHelpers,
             const QuantLib::DayCounter& dayCounter,
             const std::vector<QuantLib::Handle<QuantLib::Quote> >& jumps,
-            const std::vector<QuantLib::Date>& jumpDates,
+            const std::vector<QuantLib::Date>& jumpDates,
             QuantLib::MixedInterpolation::Behavior behavior,
             QuantLib::Size n);
 

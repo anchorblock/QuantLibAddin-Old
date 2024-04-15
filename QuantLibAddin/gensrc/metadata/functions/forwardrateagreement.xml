@@ -87,12 +87,12 @@
       </ReturnValue>
     </Member>
 
-    <Member name='qlFRAforwardValue' type='QuantLib::ForwardRateAgreement'>
+    <!--<Member name='qlFRAforwardValue' type='QuantLib::ForwardRateAgreement'>
       <description>Returns the forward value of the FRA.</description>
       <libraryFunction>forwardValue</libraryFunction>
       <SupportedPlatforms>
         <SupportedPlatform name='Excel'/>
-        <!--SupportedPlatform name='Cpp'/-->
+        --><!--SupportedPlatform name='Cpp'/--><!--
       </SupportedPlatforms>
       <ParameterList>
         <Parameters/>
@@ -101,14 +101,14 @@
         <type>double</type>
         <tensorRank>scalar</tensorRank>
       </ReturnValue>
-    </Member>
+    </Member>-->
 
-    <Member name='qlFRAspotValue' type='QuantLib::ForwardRateAgreement'>
+    <!--<Member name='qlFRAspotValue' type='QuantLib::ForwardRateAgreement'>
       <description>Returns the spot value of the FRA.</description>
       <libraryFunction>spotValue</libraryFunction>
       <SupportedPlatforms>
         <SupportedPlatform name='Excel'/>
-        <!--SupportedPlatform name='Cpp'/-->
+        --><!--SupportedPlatform name='Cpp'/--><!--
       </SupportedPlatforms>
       <ParameterList>
         <Parameters/>
@@ -117,7 +117,7 @@
         <type>double</type>
         <tensorRank>scalar</tensorRank>
       </ReturnValue>
-    </Member>
+    </Member>-->
 
   </Functions>
 </Category>

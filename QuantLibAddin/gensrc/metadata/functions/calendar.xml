@@ -175,14 +175,14 @@
       </ReturnValue>
     </EnumerationMember>
 
-    <Procedure name='qlCalendarHolidayList'>
+    <!--<Procedure name='qlCalendarHolidayList'>
       <description>returns the holidays in a period between two dates according to a given holiday calendar.</description>
       <alias>QuantLib::Calendar::holidayList</alias>
       <SupportedPlatforms>
-        <!--SupportedPlatform name='Excel' calcInWizard='false'/-->
+        --><!--SupportedPlatform name='Excel' calcInWizard='false'/--><!--
         <SupportedPlatform name='Excel'/>
         <SupportedPlatform name='Calc'/>
-        <!--SupportedPlatform name='Cpp'/-->
+        --><!--SupportedPlatform name='Cpp'/--><!--
       </SupportedPlatforms>
       <ParameterList>
         <Parameters>
@@ -212,7 +212,7 @@
         <type>QuantLib::Date</type>
         <tensorRank>vector</tensorRank>
       </ReturnValue>
-    </Procedure>
+    </Procedure>-->
 
     <EnumerationMember name='qlCalendarAdjust' type='QuantLib::Calendar' loopParameter='Date'>
       <description>Adjusts a non-business day to the appropriate near business day according to a given calendar with respect to the given convention.</description>
