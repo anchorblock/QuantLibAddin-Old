@@ -327,31 +327,31 @@ namespace QuantLibAddin {
 
 
 
-    RiskyFixedBond::RiskyFixedBond(
-        const boost::shared_ptr<ObjectHandler::ValueObject>& properties,
-        std::string name,
-        QuantLib::Currency ccy,
-        QuantLib::Real recoveryRate,
-        QuantLib::Handle<QuantLib::DefaultProbabilityTermStructure> defaultTS,
-        const boost::shared_ptr<QuantLib::Schedule>& schedule,
-        QuantLib::Real rate,
-        QuantLib::DayCounter dayCounter,
-        QuantLib::BusinessDayConvention paymentConvention,
-        QuantLib::Real notional,
-        QuantLib::Handle<QuantLib::YieldTermStructure> yieldTS,
-        QuantLib::Date npvDate, // unused by now
-        bool permanent)
-    : Instrument(properties, permanent) {
+    //RiskyFixedBond::RiskyFixedBond(
+    //    const boost::shared_ptr<ObjectHandler::ValueObject>& properties,
+    //    std::string name,
+    //    QuantLib::Currency ccy,
+    //    QuantLib::Real recoveryRate,
+    //    QuantLib::Handle<QuantLib::DefaultProbabilityTermStructure> defaultTS,
+    //    const boost::shared_ptr<QuantLib::Schedule>& schedule,
+    //    QuantLib::Real rate,
+    //    QuantLib::DayCounter dayCounter,
+    //    QuantLib::BusinessDayConvention paymentConvention,
+    //    QuantLib::Real notional,
+    //    QuantLib::Handle<QuantLib::YieldTermStructure> yieldTS,
+    //    QuantLib::Date npvDate, // unused by now
+    //    bool permanent)
+    //: Instrument(properties, permanent) {
 
-        std::vector<QuantLib::Real> notionals(1,notional);
+    //    std::vector<QuantLib::Real> notionals(1,notional);
 
-        libraryObject_ = boost::shared_ptr<QuantLib::RiskyFixedBond>(
-            new QuantLib::RiskyFixedBond(
-                    name,ccy,recoveryRate,defaultTS,*schedule,rate,dayCounter,
-                    paymentConvention,notionals,yieldTS///, npvDate
-                                       ));
+    //    libraryObject_ = boost::shared_ptr<QuantLib::RiskyFixedBond>(
+    //        new QuantLib::RiskyFixedBond(
+    //                name,ccy,recoveryRate,defaultTS,*schedule,rate,dayCounter,
+    //                paymentConvention,notionals,yieldTS///, npvDate
+    //                                   ));
 
-    }
+    //}
 
 
     SyntheticCDO::SyntheticCDO(
