@@ -38,6 +38,7 @@
     <ProjectName>QuantLibObjects</ProjectName>
     <ProjectGuid>{CAB8330C-6424-4455-9285-3654587EF71F}</ProjectGuid>
     <RootNamespace>QuantLibObjects</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="..\QuantLib\QuantLib.props" />
@@ -152,29 +153,29 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\lib\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QuantLibObjects-$(PlatformToolset)-mt-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QuantLibObjects-$(PlatformToolset)-x64-mt-1_22_0</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QuantLibObjects-$(PlatformToolset)-mt-gd-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QuantLibObjects-$(PlatformToolset)-x64-mt-gd-1_22_0</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'">QuantLibObjects-$(PlatformToolset)-mt-sgd-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">QuantLibObjects-$(PlatformToolset)-x64-mt-sgd-1_22_0</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'">QuantLibObjects-$(PlatformToolset)-mt-s-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">QuantLibObjects-$(PlatformToolset)-x64-mt-s-1_22_0</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(BOOST);$(IncludePath)</IncludePath>
     <LibraryPath>$(BOOST_LIB64);$(LibraryPath)</LibraryPath>
+    <TargetName>QuantLibObjects-$(PlatformToolset)-x64-mt-gd-1_33_0</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">
     <IncludePath>$(BOOST);$(IncludePath)</IncludePath>
     <LibraryPath>$(BOOST_LIB64);$(LibraryPath)</LibraryPath>
+    <TargetName>QuantLibObjects-$(PlatformToolset)-x64-mt-sgd-1_33_0</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(BOOST);$(IncludePath)</IncludePath>
     <LibraryPath>$(BOOST_LIB64);$(LibraryPath)</LibraryPath>
+    <TargetName>QuantLibObjects-$(PlatformToolset)-x64-mt-1_33_0</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">
     <IncludePath>$(BOOST);$(IncludePath)</IncludePath>
     <LibraryPath>$(BOOST_LIB64);$(LibraryPath)</LibraryPath>
+    <TargetName>QuantLibObjects-$(PlatformToolset)-x64-mt-s-1_33_0</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

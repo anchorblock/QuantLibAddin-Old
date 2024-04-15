@@ -38,6 +38,7 @@
     <ProjectName>QuantLibXLStatic</ProjectName>
     <ProjectGuid>{DADFEC4C-A850-4312-8146-FB9BCC19CE92}</ProjectGuid>
     <RootNamespace>QuantLibXLStatic</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="..\..\QuantLib\QuantLib.props" />
@@ -152,13 +153,13 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\xll\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QuantLibXL-$(PlatformToolset)-mt-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-1_22_0</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-1_33_0</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QuantLibXL-$(PlatformToolset)-mt-gd-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-gd-1_22_0</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-gd-1_33_0</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'">QuantLibXL-$(PlatformToolset)-mt-sgd-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-sgd-1_22_0</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-sgd-1_33_0</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'">QuantLibXL-$(PlatformToolset)-mt-s-1_22_0</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-s-1_22_0</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">QuantLibXL-$(PlatformToolset)-x64-mt-s-1_33_0</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'">.xll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">.xll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.xll</TargetExt>
@@ -279,7 +280,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-sgd-1_22_0.lib</ImportLibrary>
+      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-sgd-1_33_0.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
@@ -379,7 +380,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-gd-1_22_0.lib</ImportLibrary>
+      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-gd-1_33_0.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
@@ -479,7 +480,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-s-1_22_0.lib</ImportLibrary>
+      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-s-1_33_0.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
@@ -579,7 +580,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-1_22_0.lib</ImportLibrary>
+      <ImportLibrary>.\buildStatic\$(PlatformToolset)\$(Platform)\$(Configuration)/QuantLibXL-$(PlatformToolset)-mt-1_33_0.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
