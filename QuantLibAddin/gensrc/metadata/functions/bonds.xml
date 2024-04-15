@@ -1477,10 +1477,10 @@
       </ParameterList>
     </Constructor>
 
-    <Constructor name='qlFixedRateBond2'>
+    <!--<Constructor name='qlFixedRateBond2'>
       <libraryFunction>FixedRateBond</libraryFunction>
       <SupportedPlatforms>
-        <!--SupportedPlatform name='Excel' calcInWizard='false'/-->
+        --><!--SupportedPlatform name='Excel' calcInWizard='false'/--><!--
         <SupportedPlatform name='Excel'/>
         <SupportedPlatform name='Calc'/>
         <SupportedPlatform name='Cpp'/>
@@ -1540,7 +1540,7 @@
           </Parameter>
         </Parameters>
       </ParameterList>
-    </Constructor>
+    </Constructor>-->
 
     <Constructor name='qlFloatingRateBond'>
       <libraryFunction>FloatingRateBond</libraryFunction>
