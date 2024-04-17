@@ -30,6 +30,7 @@
 #include <ql/indexes/ibor/usdlibor.hpp>
 #include <ql/indexes/ibor/gbplibor.hpp>
 #include <ql/indexes/ibor/sonia.hpp>
+#include <ql/indexes/ibor/sofr.hpp>
 #include <ql/indexes/ibor/chflibor.hpp>
 #include <ql/indexes/ibor/jpylibor.hpp>
 
@@ -171,6 +172,15 @@ namespace QuantLibAddin {
     {
         libraryObject_ = shared_ptr<QuantLib::Sonia>(new
             QuantLib::Sonia(h));
+    }
+
+    Sofr::Sofr(const shared_ptr<ValueObject>& properties,
+        const QuantLib::Handle<QuantLib::YieldTermStructure>& h,
+        bool permanent)
+        : OvernightIndex(properties, permanent)
+    {
+        libraryObject_ = shared_ptr<QuantLib::Sofr>(new
+            QuantLib::Sofr(h));
     }
 
 }

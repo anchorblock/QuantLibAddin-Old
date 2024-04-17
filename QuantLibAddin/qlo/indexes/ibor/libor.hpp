@@ -43,6 +43,13 @@ namespace QuantLibAddin {
               bool permanent);
     };
 
+    class Sofr : public OvernightIndex {
+    public:
+        Sofr(const boost::shared_ptr<ObjectHandler::ValueObject>& properties,
+            const QuantLib::Handle<QuantLib::YieldTermStructure>& hYTS,
+            bool permanent);
+    };
+
 }
 
 #endif

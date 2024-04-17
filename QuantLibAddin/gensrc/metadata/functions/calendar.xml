@@ -186,11 +186,11 @@
       </SupportedPlatforms>
       <ParameterList>
         <Parameters>
-          <Parameter name='Calendar' exampleValue ='TARGET'>
+          --><!--<Parameter name='Calendar' exampleValue ='TARGET'>
             <type>QuantLib::Calendar</type>
             <tensorRank>scalar</tensorRank>
             <description>Calendar to use for holiday determination.</description>
-          </Parameter>
+          </Parameter>--><!--
           <Parameter name='FromDate' exampleValue ='01-Jan-2005'>
             <type>QuantLib::Date</type>
             <tensorRank>scalar</tensorRank>
@@ -213,6 +213,47 @@
         <tensorRank>vector</tensorRank>
       </ReturnValue>
     </Procedure>-->
+	  
+	  
+	  
+	  
+	  <!--<EnumerationMember name='qlCalendarHolidayList' type='QuantLib::Calendar' >
+		  <description>Returns the number of holidays between two dates.</description>
+		  <libraryFunction>holidayList</libraryFunction>
+		  <SupportedPlatforms>
+			  --><!--SupportedPlatform name='Excel' calcInWizard='false'/--><!--
+			  <SupportedPlatform name='Excel'/>
+			  --><!--SupportedPlatform name='Cpp'/--><!--
+			  <SupportedPlatform name='Calc'/>
+		  </SupportedPlatforms>
+		  <ParameterList>
+			  <Parameters>
+				  <Parameter name='FromDate' exampleValue ='01-Jan-2005'>
+					  <type>QuantLib::Date</type>
+					  <tensorRank>scaler</tensorRank>
+					  <description>first date of the period.</description>
+				  </Parameter>
+				  <Parameter name='ToDate' exampleValue ='01-Jan-2007'>
+					  <type>QuantLib::Date</type>
+					  <tensorRank>scalar</tensorRank>
+					  <description>last date of the period.</description>
+				  </Parameter>
+				  <Parameter name='IncludeWeekEnds' default='false'>
+					  <type>bool</type>
+					  <tensorRank>scalar</tensorRank>
+					  <description>include week-end as holidays.</description>
+				  </Parameter>
+			  
+			  </Parameters>
+		  </ParameterList>
+		  <ReturnValue>
+			  <type>QuantLib::Date</type>
+			  <tensorRank>vector</tensorRank>
+		  </ReturnValue>
+	  </EnumerationMember>-->
+	 
+
+	
 
     <EnumerationMember name='qlCalendarAdjust' type='QuantLib::Calendar' loopParameter='Date'>
       <description>Adjusts a non-business day to the appropriate near business day according to a given calendar with respect to the given convention.</description>

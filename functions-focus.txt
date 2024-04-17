@@ -1,0 +1,16 @@
+qlRiskyFixedBond- removed in 1.33
+qlCalendarHolidayList
+qlFixedRateBond2 - deprecated
+qlFRAforwardValue -> replaced by qlFRAAmount
+qlFRAspotValue -> replaced by qlFRAAmount
+qlOneFactorAffineModelCalibrate
+qlModelG2Calibrate
+qlPayoffCashPayoff(not in 1.22)
+qlPayoffStrikePayoff(not in 1.22)
+qlPayoffStrikeIncrement(not in 1.22)
+qlCliquetOption(not in 1.22)
+qlPiecewiseYieldCurveImprovements(not in 1.22)
+qlPiecewiseYieldCurveIterations(not in 1.22)
+qlAbcdAtmVolCurveEndCriteria (not in 1.22)
+
+
