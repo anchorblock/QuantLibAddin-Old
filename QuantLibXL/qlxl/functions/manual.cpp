@@ -39,6 +39,21 @@
 
 
 
+#include <qlo/calibrationhelpers.hpp>
+#include <qlo/shortratemodels.hpp>
+#include <qlo/pricingengines.hpp>
+#include <qlo/indexes/ibor/euribor.hpp>
+#include <qlo/optimization.hpp>
+#include <ql/models/shortrate/calibrationhelpers/swaptionhelper.hpp>
+#include <ql/indexes/ibor/euribor.hpp>
+#include <ql/models/shortrate/onefactormodel.hpp>
+#include <ql/models/shortrate/twofactormodels/g2.hpp>
+#include <qlo/valueobjects/vo_calibrationhelpers.hpp>
+
+
+
+
+
 #define XLL_DEC DLLEXPORT
 
 
@@ -106,7 +121,7 @@ XLL_DEC OPER* qlCalendarHolidayList(
 
             // convert input datatypes to C++ datatypes
 
-            ObjectHandler::property_t ToDateCpp = ObjectHandler::convert2<ObjectHandler::property_t>(
+        ObjectHandler::property_t ToDateCpp = ObjectHandler::convert2<ObjectHandler::property_t>(
                 ObjectHandler::ConvertOper(*ToDate));
 
         ObjectHandler::property_t FromDateCpp = ObjectHandler::convert2<ObjectHandler::property_t>(
@@ -141,6 +156,188 @@ XLL_DEC OPER* qlCalendarHolidayList(
         static OPER xRet;
         ObjectHandler::vectorToOper(returnValVec, xRet);
         return &xRet;
+
+    }
+    catch (const std::exception& e) {
+        ObjectHandler::RepositoryXL::instance().logError(e.what(), functionCall);
+        return 0;
+    }
+    catch (...) {
+        ObjectHandler::RepositoryXL::instance().logError("unkown error type", functionCall);
+        return 0;
+    }
+
+}
+
+
+
+XLL_DEC bool* qlOneFactorAffineModelCalibrate(
+    char* ObjectId,
+    OPER* BlackCalibrationHelpers,
+    char* Method,
+    char* EndCriteria,
+    char* Constraint,
+    OPER* Weights,
+    OPER* FixedCoeff,
+    OPER* Trigger) {
+
+    // declare a shared pointer to the Function Call object
+
+    boost::shared_ptr<ObjectHandler::FunctionCall> functionCall;
+
+    try {
+
+        // instantiate the Function Call object
+
+        functionCall = boost::shared_ptr<ObjectHandler::FunctionCall>(
+            new ObjectHandler::FunctionCall("qlOneFactorAffineModelCalibrate"));
+
+        ObjectHandler::validateRange(Trigger, "Trigger");
+
+        // initialize the session ID (if enabled)
+
+        SET_SESSION_ID
+
+            // convert input datatypes to C++ datatypes
+
+            std::vector<std::string> BlackCalibrationHelpersCpp =
+            ObjectHandler::operToVector<std::string>(*BlackCalibrationHelpers, "BlackCalibrationHelpers");
+
+        std::vector<double> WeightsCpp =
+            ObjectHandler::operToVector<double>(*Weights, "Weights");
+
+        std::vector<bool> FixedCoeffCpp =
+            ObjectHandler::operToVector<bool>(*FixedCoeff, "FixedCoeff");
+
+        // convert input datatypes to QuantLib datatypes
+
+        std::vector<QuantLib::Real> WeightsLib =
+            ObjectHandler::operToVector<QuantLib::Real>(*Weights, "Weights");
+
+        // convert object IDs into library objects
+
+        OH_GET_REFERENCE(ObjectIdLibObjPtr, ObjectId,
+            QuantLibAddin::OneFactorAffineModel, QuantLib::OneFactorAffineModel)
+
+            std::vector<boost::shared_ptr<QuantLib::BlackCalibrationHelper> > BlackCalibrationHelpersLibObjPtr =
+            ObjectHandler::getLibraryObjectVector<QuantLibAddin::BlackCalibrationHelper, QuantLib::BlackCalibrationHelper>(BlackCalibrationHelpersCpp);
+
+        std::vector<boost::shared_ptr<QuantLib::CalibrationHelper> > CalibrationHelpersLibObjPtr(BlackCalibrationHelpersLibObjPtr.begin(), BlackCalibrationHelpersLibObjPtr.end());
+
+        OH_GET_UNDERLYING_NONCONST(MethodLibObj, Method,
+            QuantLibAddin::OptimizationMethod, QuantLib::OptimizationMethod)
+
+            OH_GET_UNDERLYING(EndCriteriaLibObj, EndCriteria,
+                QuantLibAddin::EndCriteria, QuantLib::EndCriteria)
+
+            OH_GET_UNDERLYING(ConstraintLibObj, Constraint,
+                QuantLibAddin::Constraint, QuantLib::Constraint)
+
+            // invoke the member function
+
+            static bool returnValue = true;
+        ObjectIdLibObjPtr->calibrate(
+            CalibrationHelpersLibObjPtr,
+            MethodLibObj,
+            EndCriteriaLibObj,
+            ConstraintLibObj,
+            WeightsLib,
+            FixedCoeffCpp);
+
+        // convert and return the return value
+
+        return &returnValue;
+
+    }
+    catch (const std::exception& e) {
+        ObjectHandler::RepositoryXL::instance().logError(e.what(), functionCall);
+        return 0;
+    }
+    catch (...) {
+        ObjectHandler::RepositoryXL::instance().logError("unkown error type", functionCall);
+        return 0;
+    }
+
+}
+
+
+XLL_DEC bool* qlModelG2Calibrate(
+    char* ObjectId,
+    OPER* BlackCalibrationHelpers,
+    char* Method,
+    char* EndCriteria,
+    char* Constraint,
+    OPER* Weights,
+    OPER* FixedCoeff,
+    OPER* Trigger) {
+
+    // declare a shared pointer to the Function Call object
+
+    boost::shared_ptr<ObjectHandler::FunctionCall> functionCall;
+
+    try {
+
+        // instantiate the Function Call object
+
+        functionCall = boost::shared_ptr<ObjectHandler::FunctionCall>(
+            new ObjectHandler::FunctionCall("qlModelG2Calibrate"));
+
+        ObjectHandler::validateRange(Trigger, "Trigger");
+
+        // initialize the session ID (if enabled)
+
+        SET_SESSION_ID
+
+            // convert input datatypes to C++ datatypes
+
+            std::vector<std::string> BlackCalibrationHelpersCpp =
+            ObjectHandler::operToVector<std::string>(*BlackCalibrationHelpers, "BlackCalibrationHelpers");
+
+        std::vector<double> WeightsCpp =
+            ObjectHandler::operToVector<double>(*Weights, "Weights");
+
+        std::vector<bool> FixedCoeffCpp =
+            ObjectHandler::operToVector<bool>(*FixedCoeff, "FixedCoeff");
+
+        // convert input datatypes to QuantLib datatypes
+
+        std::vector<QuantLib::Real> WeightsLib =
+            ObjectHandler::operToVector<QuantLib::Real>(*Weights, "Weights");
+
+        // convert object IDs into library objects
+
+        OH_GET_REFERENCE(ObjectIdLibObjPtr, ObjectId,
+            QuantLibAddin::G2, QuantLib::G2)
+
+            std::vector<boost::shared_ptr<QuantLib::BlackCalibrationHelper> > BlackCalibrationHelpersLibObjPtr =
+            ObjectHandler::getLibraryObjectVector<QuantLibAddin::BlackCalibrationHelper, QuantLib::BlackCalibrationHelper>(BlackCalibrationHelpersCpp);
+            
+            std::vector<boost::shared_ptr<QuantLib::CalibrationHelper> > CalibrationHelpersLibObjPtr(BlackCalibrationHelpersLibObjPtr.begin(), BlackCalibrationHelpersLibObjPtr.end());
+
+
+        OH_GET_UNDERLYING_NONCONST(MethodLibObj, Method,
+            QuantLibAddin::OptimizationMethod, QuantLib::OptimizationMethod)
+
+            OH_GET_UNDERLYING(EndCriteriaLibObj, EndCriteria,
+                QuantLibAddin::EndCriteria, QuantLib::EndCriteria)
+
+            OH_GET_UNDERLYING(ConstraintLibObj, Constraint,
+                QuantLibAddin::Constraint, QuantLib::Constraint)
+
+            // invoke the member function
+
+            static bool returnValue = true;
+        ObjectIdLibObjPtr->calibrate(
+            CalibrationHelpersLibObjPtr,
+            MethodLibObj,
+            EndCriteriaLibObj,
+            ConstraintLibObj,
+            WeightsLib,
+            FixedCoeffCpp);
+
+        // convert and return the return value
+
+        return &returnValue;
 
     }
     catch (const std::exception& e) {

@@ -217,13 +217,13 @@
 	  
 	  
 	  
-	  <!--<EnumerationMember name='qlCalendarHolidayList' type='QuantLib::Calendar' >
+	  <EnumerationMember name='qlCalendarHolidayList' type='QuantLib::Calendar' >
 		  <description>Returns the number of holidays between two dates.</description>
 		  <libraryFunction>holidayList</libraryFunction>
 		  <SupportedPlatforms>
-			  --><!--SupportedPlatform name='Excel' calcInWizard='false'/--><!--
-			  <SupportedPlatform name='Excel'/>
-			  --><!--SupportedPlatform name='Cpp'/--><!--
+			  <!--SupportedPlatform name='Excel' calcInWizard='false'/-->
+			  <SupportedPlatform name='Excel' implementation='manual'/>
+			  <!--SupportedPlatform name='Cpp-->'/
 			  <SupportedPlatform name='Calc'/>
 		  </SupportedPlatforms>
 		  <ParameterList>
@@ -250,7 +250,7 @@
 			  <type>QuantLib::Date</type>
 			  <tensorRank>vector</tensorRank>
 		  </ReturnValue>
-	  </EnumerationMember>-->
+	  </EnumerationMember>
 	 
 
 	

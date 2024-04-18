@@ -70,7 +70,7 @@ namespace QuantLibAddin {
                                                                                               length, 
                                                                                               volatility, 
                                                                                               index, 
-                                                                                              fixedLegTenor, 
+                                                                                               fixedLegTenor, 
                                                                                               fixedLegDayCounter, 
                                                                                               floatingLegDayCounter, 
                                                                                               termStructure));

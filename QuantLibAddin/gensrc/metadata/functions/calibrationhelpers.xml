@@ -169,18 +169,18 @@
       </ReturnValue>
     </Member>
 
-    <!--<Member name='qlOneFactorAffineModelCalibrate' type='QuantLib::OneFactorAffineModel'>
+    <Member name='qlOneFactorAffineModelCalibrate' type='QuantLib::OneFactorAffineModel'>
       <description>calibrate a model.</description>
       <libraryFunction>calibrate</libraryFunction>
       <SupportedPlatforms>
-        SupportedPlatform name='Excel' calcInWizard='false'/
-        <SupportedPlatform name='Excel'/>
+        <!--SupportedPlatform name='Excel' calcInWizard='false'/-->
+        <SupportedPlatform name='Excel' implementation='manual'/>
         <SupportedPlatform name='Calc'/>
-        SupportedPlatform name='Cpp'/
+        <!--SupportedPlatform name='Cpp-->'/
       </SupportedPlatforms>
       <ParameterList>
         <Parameters>
-          <Parameter name='CalibrationHelpers'>
+          <Parameter name='BlackCalibrationHelpers'>
             <type>QuantLib::BlackCalibrationHelper</type>
             <tensorRank>vector</tensorRank>
             <description>vector of calibration-helpers.</description>
@@ -225,14 +225,14 @@
       <description>calibrate a model.</description>
       <libraryFunction>calibrate</libraryFunction>
       <SupportedPlatforms>
-        SupportedPlatform name='Excel' calcInWizard='false'/
-        <SupportedPlatform name='Excel'/>
+        <!--SupportedPlatform name='Excel' calcInWizard='false'/-->
+        <SupportedPlatform name='Excel' implementation='manual'/>
         <SupportedPlatform name='Calc'/>
-        SupportedPlatform name='Cpp'/
+        <!--SupportedPlatform name='Cpp'/-->
       </SupportedPlatforms>
       <ParameterList>
         <Parameters>
-          <Parameter name='CalibrationHelpers'>
+          <Parameter name='BlackCalibrationHelpers'>
             <type>QuantLib::BlackCalibrationHelper</type>
             <tensorRank>vector</tensorRank>
             <description>vector of calibration-helpers.</description>
@@ -271,7 +271,7 @@
         <type>void</type>
         <tensorRank>scalar</tensorRank>
       </ReturnValue>
-    </Member>-->
+    </Member>
 
   </Functions>
 </Category>

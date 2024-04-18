@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ohgensrc", "..\ObjectHandler\gensrc\ohgensrc.vcxproj", "{88BE5568-6E55-41C5-A251-670FAFB44336}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuantLib", "..\QuantLib\QuantLib.vcxproj", "{AD0A27DA-91DA-46A2-ACBD-296C419ED3AA}"
@@ -20,6 +21,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aprutil", "..\log4cxx\msvc\aprutil.vcxproj", "{0082D6A9-8051-4946-888B-4E52C17BF98E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cxx", "..\log4cxx\msvc\log4cxx.vcxproj", "{FA6EB34E-6BE0-46F5-AA4C-704B49BE63D2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BermudanSwaption", "..\QuantLib\Examples\BermudanSwaption\BermudanSwaption.vcxproj", "{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -235,6 +238,26 @@ Global
 		{FA6EB34E-6BE0-46F5-AA4C-704B49BE63D2}.Release|Win32.Build.0 = Release|Win32
 		{FA6EB34E-6BE0-46F5-AA4C-704B49BE63D2}.Release|x64.ActiveCfg = Release|x64
 		{FA6EB34E-6BE0-46F5-AA4C-704B49BE63D2}.Release|x64.Build.0 = Release|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.All|Win32.ActiveCfg = Debug|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.All|Win32.Build.0 = Debug|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.All|x64.ActiveCfg = Debug|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.All|x64.Build.0 = Debug|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug (static runtime)|Win32.ActiveCfg = Debug (static runtime)|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug (static runtime)|Win32.Build.0 = Debug (static runtime)|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug (static runtime)|x64.ActiveCfg = Debug (static runtime)|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug (static runtime)|x64.Build.0 = Debug (static runtime)|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug|Win32.Build.0 = Debug|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug|x64.ActiveCfg = Debug|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Debug|x64.Build.0 = Debug|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release (static runtime)|Win32.ActiveCfg = Release (static runtime)|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release (static runtime)|Win32.Build.0 = Release (static runtime)|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release (static runtime)|x64.ActiveCfg = Release (static runtime)|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release (static runtime)|x64.Build.0 = Release (static runtime)|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release|Win32.ActiveCfg = Release|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release|Win32.Build.0 = Release|Win32
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release|x64.ActiveCfg = Release|x64
+		{940A0AFC-9F9F-4797-A0FF-99543F67C1D9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

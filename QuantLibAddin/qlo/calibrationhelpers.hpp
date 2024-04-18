@@ -27,6 +27,7 @@
 
 namespace QuantLib {
     class BlackCalibrationHelper;
+    class CalibrationHelper;
     class Quote;
     class Period;
     class DayCounter;
@@ -46,6 +47,16 @@ namespace QuantLibAddin {
           OH_LIB_CTOR(BlackCalibrationHelper, QuantLib::BlackCalibrationHelper);
       //  std::string quoteName_;
     };
+
+    class CalibrationHelper : public ObjectHandler::LibraryObject<QuantLib::CalibrationHelper> {
+	  //public:
+	  //  std::string quoteName() { return quoteName_; }
+	  protected:
+		  OH_LIB_CTOR(CalibrationHelper, QuantLib::CalibrationHelper);
+	  //  std::string quoteName_;
+	};
+
+    
 
     class SwaptionHelper : public BlackCalibrationHelper {
       public:
